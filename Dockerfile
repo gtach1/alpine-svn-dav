@@ -1,4 +1,4 @@
-FROM armhf/alpine
+FROM alpine
 
 VOLUME /var/svn
 ENV SVN_ROOT=/var/svn
