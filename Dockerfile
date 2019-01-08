@@ -1,4 +1,4 @@
-FROM arm32v6/alpine:3.7
+FROM frolvlad/alpine-glibc
 
 VOLUME /var/svn
 ENV SVN_ROOT=/var/svn
