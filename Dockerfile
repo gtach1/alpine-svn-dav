@@ -3,7 +3,7 @@ FROM arm32v6/alpine:3.7
 VOLUME /var/svn
 ENV SVN_ROOT=/var/svn
 
-RUN apk --no-cache add apache2 apache2-utils apache2-webdav mod_dav_svn subversion
+RUN apk update && apk --no-cache add apache2 apache2-utils apache2-webdav mod_dav_svn subversion
 RUN mkdir -p /run/apache2
 
 COPY vh-davsvn.conf /etc/apache2/conf.d/
