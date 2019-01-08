@@ -1,4 +1,4 @@
-FROM arm32v6/alpine
+FROM arm32v6/alpine:3.7
 
 VOLUME /var/svn
 ENV SVN_ROOT=/var/svn
